@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">RockPaperScissors</string>
+    <string name="app_title">ROCK PAPER SCISSORS</string>
+    <string name="rock_desc">rock</string>
+    <string name="paper_desc">paper</string>
+    <string name="try_to_the_beat_the_beast">Try to the beat the beast</string>
+    <string name="scissors_desc">scissors</string>
+    <string name="computer">COMPUTER</string>
+    <string name="you">YOU</string>
+    <string name="restart">Restart</string>
+    <string name="rock">ROCK</string>
+    <string name="paper">PAPER</string>
+    <string name="scissors">SCISSORS</string>
+</resources>

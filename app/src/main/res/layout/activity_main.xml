@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="@string/app_title"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+<TableLayout
+    android:id="@+id/symbols"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/title"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="30dp">
+    <TableRow>
+        <ImageView
+            android:id="@+id/rock"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/rock"
+            android:layout_marginEnd="20dp"
+            android:contentDescription="@string/rock_desc"
+            android:clickable="true"
+            android:focusable="true" />
+        <ImageView
+            android:id="@+id/paper"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/paper"
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/paper_desc" />
+        <ImageView
+            android:id="@+id/scissors"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/scissor"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/scissors_desc" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rock"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:layout_marginEnd="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/paper"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:layout_marginEnd="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scissors"
+            android:gravity="center"
+            android:textSize="24sp"/>
+    </TableRow>
+</TableLayout>
+
+    <TextView
+        android:id="@+id/beast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/symbols"
+        android:layout_centerInParent="true"
+        android:text="@string/try_to_the_beat_the_beast"
+        android:gravity="center"
+        android:textSize="30sp" />
+    <TableLayout
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/beast"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+        <TableRow>
+            <ImageView
+                android:id="@+id/computer"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/computer"
+                android:layout_marginEnd="40dp"
+                android:contentDescription="@string/computer" />
+            <ImageView
+                android:id="@+id/human"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/human"
+                android:contentDescription="@string/you" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/computerScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/computer"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:layout_marginEnd="40dp"/>
+            <TextView
+                android:id="@+id/humanScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/you"
+                android:gravity="center"
+                android:textSize="24sp"/>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
